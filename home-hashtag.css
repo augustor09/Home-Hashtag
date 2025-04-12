@@ -1,0 +1,659 @@
+/* Global */
+html {
+	font-size: 62.5%;
+}
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	color: #404040;
+}
+
+h1 {
+	font-size: 3.2rem;
+	font-weight: 600;
+	padding-bottom: 1.2rem;
+}
+
+h2 {
+	font-size: 2.7rem;
+	font-weight: 400;
+}
+
+strong {
+	font-weight: 600;
+}
+
+p {
+	font-size: 1.6rem;
+}
+
+.botao {
+	font-size: 2.4rem;
+	font-weight: 700;
+	text-decoration: none;
+	display: inline-block;
+	border: none;
+	background-color: inherit;
+	color: #fff;
+	border-radius: 3rem;
+	box-shadow: 0 0 0.6rem 0.17rem rgba(0, 0, 0, 0.15);
+}
+
+ul {
+	list-style: none;
+}
+
+.realce-semibold {
+	font-weight: 600;
+}
+
+.img-zap {
+	position: fixed;
+	width: 8rem;
+
+	bottom: 2rem;
+	right: 2rem;
+}
+
+label {
+	font-size: 1.5rem;
+}
+
+input {
+	display: inline-block;
+	padding: 0.82rem;
+	border-radius: 1rem;
+	border: none;
+	box-shadow: inset 0 0 0.2rem 0.2rem rgba(0, 0, 0, 0.15);
+}
+
+input::placeholder {
+	color: rgba(0, 0, 0, 0.7);
+	font-family: inherit;
+	font-size: 1.3rem;
+}
+
+/* Cabeçalho */
+
+.Cabeçalho {
+	padding: 1.5rem;
+	position: sticky;
+	top: 0rem;
+	left: 0rem;
+	background-color: white;
+	background-repeat: repeat;
+	z-index: 9999;
+	box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+
+nav {
+	display: none;
+}
+
+.item-lista-cabecalho a {
+	color: #112e61;
+	font-size: 14rem;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: 600;
+}
+
+.item-lista-cabecalho a:hover {
+	color: #f60;
+}
+
+.contem-filhos:after {
+	content: '\25bc';
+}
+
+/* Seção Hero */
+.secao-hero {
+	background-image: url(https://www.hashtagtreinamentos.com/wp-content/uploads/2022/06/BACKGROUN-banner-01.png);
+	background-position: 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	box-shadow: 0.3rem 0.3rem 0.3rem rgba(0, 0, 0, 0.2);
+	padding: 7.6rem 2rem;
+}
+
+.container-hero {
+	max-width: 100rem;
+	margin: 0 auto;
+}
+
+.hero-paragrafo {
+	font-size: 1.92rem;
+	line-height: 1.3;
+	padding-bottom: 1.3rem;
+}
+
+.hero-botao {
+	background-image: linear-gradient(180deg, #ff645e, #ff9253);
+	padding: 1rem 6rem;
+	margin: 0.6rem 1rem;
+	/* box-shadow: 0.3rem 0.2rem 0 0.2rem #993c38; */
+	border-right: solid 0.5rem #993c38;
+	border-bottom: solid 0.5rem #993c38;
+}
+
+.hero-botao:hover {
+	background-color: #ff9253;
+	background-image: none;
+	/* box-shadow: 0.15rem 0.2rem 0 0.2rem #ff9253; */
+	border-color: #ff9253;
+}
+
+iframe {
+	border-radius: 2.7rem;
+	aspect-ratio: 16/9;
+	width: 40rem;
+	display: none;
+}
+
+/* Seção Conteúdos Gratuitos */
+.secao-conteudos-gratuitos {
+	padding: 7.3rem 2rem;
+	box-shadow: inset 0 0.3rem 0.3rem rgba(0, 0, 0, 0.2);
+	background-image: url(https://elegant-rabanadas-4b0397.netlify.app/Imagens/Formato%20Novo/BACKGROUN-banner-02.webp);
+	background-position: 50%;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.container-conteudos-gratuitos {
+	margin: 0 auto;
+	max-width: 100rem;
+}
+
+.secao-conteudos-gratuitos h2 {
+	display: inline-block;
+	font-weight: 300;
+}
+
+.img-seta-conteudos-gratuitos {
+	display: inline-block;
+	padding-right: 1rem;
+}
+
+.tv-conteudos-gratuitos {
+	max-width: 47rem;
+	height: auto;
+	display: inline-block;
+	padding: 2rem 0;
+}
+
+.gratuito-realce {
+	color: #7a40be;
+	font-weight: 600;
+}
+
+.gratuito-h3 {
+	font-size: 2.3rem;
+	font-weight: 700;
+	background-image: linear-gradient(90deg, #aa56e6, #6d42b9);
+	padding: 0.6rem;
+	border-radius: 1rem;
+	color: white;
+	display: inline-block;
+	margin: 0 auto;
+	max-width: 20rem;
+	transform: rotate(-2.5deg) translateX(-50%);
+	position: absolute;
+	top: -10%;
+	left: 50%;
+}
+
+.gratuito-link-lista {
+	font-size: 1.9rem;
+	text-decoration: none;
+	color: #000;
+	display: inline-block;
+	background-color: #e7e7e7;
+	border-radius: 2.4rem;
+	box-shadow: inset 0 0 0.5rem 0.3rem rgba(0, 0, 0, 0.15);
+	padding: 1.02rem;
+	width: 15rem;
+}
+
+.gratuito-link-lista:hover {
+	text-decoration: underline;
+}
+
+.caixa-img-roxa {
+	border-radius: 50%;
+	display: inline-block;
+	box-shadow: inset 0 0 0.5rem 0.3rem rgba(0, 0, 0, 0.15);
+	background-color: #e7e7e7;
+	width: 4.5rem;
+	height: 4.5rem;
+}
+
+.img-roxa-conteudos-gratuitos {
+	padding: 1.02rem;
+	width: 100%;
+}
+
+.img-preta-conteudos-gratuitos {
+	width: 1.8rem;
+	display: inline-block;
+	font-weight: 300;
+}
+
+.caixa-gratuitos {
+	position: relative;
+	background-color: white;
+	border-radius: 2rem;
+	padding: 0 2rem;
+	margin: 0 1rem;
+	box-shadow: inset 0 0 0.7rem 0.4rem rgba(0, 0, 0, 0.15);
+	max-width: 23rem;
+	display: inline-block;
+}
+
+.caixas-roxas {
+	margin-bottom: 0.82rem;
+	margin-top: 1.02rem;
+}
+
+/* Seção Diferenciais */
+.secao-diferenciais {
+	padding: 7.3rem 2rem;
+}
+
+.container-diferenciais {
+	max-width: 100rem;
+	margin: 0 auto;
+}
+
+.parte-1-diferenciais {
+	background-image: linear-gradient(225deg, #196b9f, #1a82a7);
+	color: white;
+	padding: 4.8rem;
+	padding-bottom: 6rem;
+	border-radius: 3.5rem 3.5rem 0 0;
+}
+
+.diferenciais-h2 {
+	border-left: solid 0.5rem #ffb20f;
+	max-width: 44rem;
+	display: inline-block;
+	padding-left: 2rem;
+	font-size: 2.76rem;
+}
+
+.diferenciais-p {
+	font-size: 1.9rem;
+	max-width: 44rem;
+	display: inline-block;
+}
+
+.parte-2-diferenciais {
+	padding: 1rem 2.7rem;
+	padding-bottom: 3rem;
+	box-shadow: inset 0 0 0.5rem 0.3rem rgba(0, 0, 0, 0.15);
+	border-radius: 0 0 3.5rem 3.5rem;
+}
+
+.img-icone-diferenciais {
+	background-color: #ffaf00;
+	width: 10rem;
+	height: 10rem;
+	border-radius: 1.5rem;
+	padding: 1.4rem;
+	position: absolute;
+	top: -15%;
+	left: 50%;
+	transform: translateX(-50%);
+	box-shadow: inset 0 0 0.6rem 0.3rem rgba(0, 0, 0, 0.15);
+}
+
+.coluna-diferenciais {
+	padding: 5rem 2rem;
+	max-width: 30rem;
+	display: inline-block;
+	margin: 0 0.65rem;
+	box-shadow: 0 0 0.5rem 0.3rem rgba(0, 0, 0, 0.15);
+	border-radius: 2rem;
+	position: relative;
+}
+
+.coluna-diferenciais p {
+	margin: 0.8rem 0;
+}
+
+.diferenciais-h3 {
+	color: #005e88;
+	font-size: 2.4rem;
+	font-weight: 600;
+	margin: 1.3rem 0;
+}
+
+.diferenciais-h3-empresas {
+	font-size: 2.3rem;
+	font-weight: 400;
+	padding: 6rem 0;
+	max-width: 55rem;
+	margin: 0 auto;
+}
+
+.diferenciais-h3-empresas a {
+	color: #005e88;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+.empresas-diferenciais {
+	height: 5rem;
+	padding: 1rem 3rem;
+	filter: grayscale(100%);
+}
+
+/* Seção O que falam */
+.secao-oque-falam {
+	background-image: url(https://elegant-rabanadas-4b0397.netlify.app/Imagens/Formato%20Novo/BACKGROUN-banner-04.webp);
+	background-position: 50%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 7.3rem 2rem;
+}
+
+.container-oquefalam {
+	margin: 0 auto;
+	max-width: 100rem;
+}
+
+.titulo-oquefalam {
+	padding-bottom: 3rem;
+}
+
+.h2-oquefalam {
+	color: white;
+	display: inline-block;
+}
+
+.img-megafone-oquefalam {
+	width: 3.7rem;
+	height: auto;
+	margin-right: 1.5rem;
+}
+
+.carrossel {
+	position: relative;
+}
+
+.botao-lados-oquefalam {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	box-shadow: none;
+}
+
+.botao-direito {
+	right: 0;
+	transform: translate(150%, -50%);
+}
+
+.botao-esquerdo {
+	left: 0;
+	transform: translate(-150%, -50%);
+}
+
+.video-oquefalam {
+	border-radius: 3rem;
+	width: 32rem;
+	height: auto;
+	margin: 0 0.2rem;
+	aspect-ratio: 16/9;
+	background-size: cover;
+	display: inline-block;
+}
+
+.video1 {
+	background-image: url(https://i3.ytimg.com/vi/N_EZD04zmrw/hqdefault.jpg);
+	background-position-y: center;
+}
+
+.video2 {
+	background-image: url(https://i3.ytimg.com/vi/auqWeBJLJHY/hqdefault.jpg);
+}
+
+.video3 {
+	background-image: url(https://i3.ytimg.com/vi/FD79IpCaM1Y/hqdefault.jpg);
+}
+
+.botoes-navegacao {
+	margin: 2rem 45rem;
+}
+
+.botao-navegacao-oquefalam {
+	background-color: #86a8bc;
+	z-index: 999;
+	width: 1.5rem;
+	height: 1.5rem;
+	display: inline-block;
+	border-radius: 50%;
+}
+
+.botao-oquefalam {
+	background-image: linear-gradient(180deg, #196c9f, #1a80a7);
+	max-width: 32rem;
+	padding: 1rem 2.5rem;
+	margin: 0 auto;
+	border-bottom: solid 0.45rem #14577f;
+	border-right: solid 0.45rem #14577f;
+}
+
+.botao-oquefalam:hover {
+	background-image: none;
+	background-color: #1a80a7;
+	border-color: #1a80a7;
+}
+
+/* secao-namidia */
+.secao-namidia {
+	background-image: url(https://www.hashtagtreinamentos.com/wp-content/uploads/2022/06/BACKGROUND-Banner-05_1.png);
+	background-position: 40%;
+	background-size: cover;
+	padding: 4.2rem 2rem;
+}
+
+.seta-namidia {
+	width: 1.7rem;
+	height: 1.7rem;
+	display: inline-block;
+	margin-right: 1rem;
+}
+
+.h2-namidia {
+	display: inline-block;
+}
+
+.bloco1-namidia {
+	display: inline-block;
+	padding-right: 2rem;
+	padding-bottom: 2rem;
+}
+
+.conteudo-namidia {
+	max-width: 78.3rem;
+	margin: 0 auto;
+}
+
+.img-namidia {
+	display: inline-block;
+	padding-left: 2rem;
+}
+
+/* Seção Blog */
+.secao-blog {
+	padding: 7.3rem 2rem;
+}
+
+.container-blog {
+	margin: 0 17rem;
+	box-shadow: inset 0 0 0.5rem 0.3rem rgba(0, 0, 0, 0.15);
+	border-radius: 3rem;
+}
+
+.h2-blog {
+	background-color: #f7a70c;
+	display: inline-block;
+	color: white;
+	padding: 1.3rem 2.4rem;
+	border-radius: 1.5rem;
+}
+
+.caixa1-blog {
+	box-shadow: 0 0 0.5rem 0.3rem rgba(0, 0, 0, 0.15);
+}
+
+.img-blog {
+	width: 42rem;
+}
+
+.blog-postadoem {
+	font-size: 1.5rem;
+}
+
+.blog-postadoem a {
+	font-weight: 600;
+	color: #f7a70c;
+	text-decoration: none;
+}
+
+.blog-titulopost {
+	font-size: 2.4rem;
+	font-weight: 600;
+	text-decoration: none;
+}
+
+.blog-descricaopost {
+	font-size: 1.7rem;
+}
+
+/* Seção Como ajudar */
+
+.secao-laranja-comoajudar {
+	background-image: url(https://elegant-rabanadas-4b0397.netlify.app/Imagens/Formato%20Novo/BACKGROUND-banner-07.webp);
+	background-position: 50%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 7.3rem 2rem;
+}
+
+.container-comoajudar {
+	max-width: 86rem;
+	margin: 0 auto;
+}
+
+.secao-laranja-comoajudar h2 {
+	color: #fff;
+	background-image: linear-gradient(90deg, #14a1d5, #1a8ad4);
+	padding: 0.52rem 1.6rem;
+	border-radius: 1.2rem;
+	display: inline-block;
+}
+
+.comoajudar-lista {
+	font-size: 1.9rem;
+	list-style: url(https://www.hashtagtreinamentos.com/wp-content/uploads/2022/06/ELEMENTO-check_1.png);
+	background-color: #f5f5f5;
+	padding: 2rem 5rem;
+	box-shadow: inset 0 0 0.4rem 0.2rem rgba(0, 0, 0, 0.15);
+	border-radius: 2rem;
+	position: relative;
+}
+
+.comoajudar-lista li {
+	margin: 01rem 0;
+}
+
+.comoajudar-lista a,
+.comoajudar-paragrafo a {
+	color: #008ff7;
+	font-weight: 600;
+}
+
+.secao-cinza-comoajudar {
+	padding: 7.3rem 2rem;
+}
+
+.comoajudar-paragrafo {
+	font-size: 1.92rem;
+	margin: 1.4rem 0;
+}
+
+.comoajudar-paragrafo b {
+	font-weight: 600;
+}
+
+/* SECAO MINICURSO */
+.secao-minicurso {
+	background-image: linear-gradient(90deg, #9e4ad7, #753db6);
+	padding: 7.6rem 2rem;
+	color: white;
+}
+
+.secao-minicurso h2 {
+	color: white;
+	margin-bottom: 2.5rem;
+	font-size: 2.7rem;
+}
+
+.container-minicurso {
+	max-width: 100rem;
+	margin: 0 auto;
+	align-items: center;
+}
+
+.input-minicurso {
+	display: inline-block;
+	margin-right: 2rem;
+}
+
+.botao-minicurso {
+	background-color: #ffba29;
+	color: white;
+	font-weight: 600;
+	border: none;
+	border-right: solid 0.4rem #664a10;
+	border-bottom: solid 0.4rem #664a10;
+	padding: 0.65rem 2.5rem;
+	border-radius: 2rem;
+}
+
+.botao-minicurso:hover {
+	border-right-color: #ffba29;
+	border-bottom-color: #ffba29;
+}
+
+/* Rodapé */
+
+.rodape-titulo {
+	font-weight: 600;
+	font-size: 2.2rem;
+}
+
+.rodape-subtitulo {
+	font-size: 2rem;
+	font-weight: 500;
+}
+
+.rodape-seg-subtitulo {
+	font-weight: 500;
+	font-size: 1.8rem;
+}
+
+.rodape-link {
+	color: #1a77a4;
+}
+
+.botao-rodape {
+	background-color: #ffba29;
+	padding: 0.65rem 2.5rem;
+}
